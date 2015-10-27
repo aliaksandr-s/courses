@@ -1,0 +1,166 @@
+html, body {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 300;
+  text-align: center;
+  color: #0393ff;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 970px;
+}
+
+.btn {
+  color: #0393ff;
+  background: transparent;
+  border: 1px solid #0393ff;
+  border-radius: 2px;
+  padding: 8px 20px;
+}
+
+.btn:hover {
+  color: white;
+  border-color: #0393ff;
+  background-color: #0393ff;
+}
+
+/***JUMBOTRON***/
+
+.jumbotron {
+  background-color: black;
+  padding: 50px 0 70px;
+  margin-bottom: 0;
+}
+
+.jumbotron li {
+  display: inline;
+  list-style: none;
+  margin-right: 30px;
+  color: white;
+}
+
+/***MAIN***/
+
+.main {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.main h1 {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.main #search {
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid white;
+}
+
+.main #search:focus, #search:hover {
+  border-bottom:1px solid #0393ff;
+  box-shadow:0px 0px 0px;
+  outline:0px
+}
+
+.main form{
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+
+.main .form-control {
+  font-size: 18px;
+  margin-right: 20px;
+  width: 400px;
+}
+
+/***SUPPORTING***/
+
+.supporting {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/projects/bolt-network/diagmonds_@2X.png");
+  background-size: 141px 142px;
+}
+
+.supporting img{
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.supporting h2 {
+  padding-top: 70px;
+}
+.supporting p {
+  padding-bottom: 40px;
+}
+
+/***FEATURE***/
+
+.feature {
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg") no-repeat center center;
+  background-size: cover;
+  height: 380px;
+}
+
+.feature .container {
+  padding-top: 150px;
+}
+
+
+/***FOOTER***/
+
+.footer .row{
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.footer {
+  background-color: black;
+}
+.footer ul{
+  padding: 0;
+  color: #0393ff;
+  list-style: none;
+}
+.footer h3{
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+@media (max-width: 770px) {
+  .pull-right{
+    margin-top: 20px;
+    float: none!important;
+    text-align: center!important;
+  }
+
+  .pull-right li a{
+    width: 50%;
+  }
+  #log{
+    margin-right: 80px;
+  }
+  #search {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer {
+    display: none;
+  }
+}
