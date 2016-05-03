@@ -18,6 +18,12 @@ function Player(x, y, speed, sprite) {
 
 Player.prototype = new Person();
 
+Player.prototype.playSound = function () {
+    var audio = document.getElementsByTagName("audio")[0];
+    audio.volume = 0.6;
+    audio.play();
+};
+
 Player.prototype.render = function () {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     displayScoreLevel(gameLevel, lives);
@@ -178,6 +184,8 @@ var player = new Player(302.5, 383, 100, 'images/char-boy.png');
 
 increaseDifficulty(0);
 
+
+
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
@@ -189,4 +197,5 @@ document.addEventListener('keyup', function(e) {
     };
 
     player.handleInput(allowedKeys[e.keyCode]);
+    player.playSound();
 });
