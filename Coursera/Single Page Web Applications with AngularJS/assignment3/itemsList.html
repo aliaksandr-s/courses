@@ -1,0 +1,25 @@
+<div class="container">
+  <table class="table table-bordered">
+    <div class="row message">
+      <div class="col-sm-12 alert alert-info">
+        Nothing found
+      </div>
+    </div>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Short name</th>
+        <th>Description</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in items.foundItems">
+        <td>{{item.name}}</td>
+        <td>{{item.short_name}}</td>
+        <td>{{item.description}}</td>
+        <td><button ng-click="items.onRemove({index: $index})" class="btn btn-sm btn-danger">Don't want this one!</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
