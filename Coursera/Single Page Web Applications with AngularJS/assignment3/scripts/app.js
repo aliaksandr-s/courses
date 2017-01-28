@@ -83,7 +83,7 @@
         var matchedItems = []
 
         for (var i = 0; i < allItems.length; i++) {
-          if (allItems[i].description.indexOf(searchTerm) >= 0) {
+          if (allItems[i].description.toLowerCase().indexOf(searchTerm) >= 0) {
             matchedItems.push(allItems[i])
           }
         }
