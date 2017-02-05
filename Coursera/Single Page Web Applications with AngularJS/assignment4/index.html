@@ -8,7 +8,8 @@
   <body>
 
     <ui-view></ui-view>
-
+    <loading-spinner></loading-spinner>
+    
     <!-- Libraries -->
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-ui-router.min.js"></script>
@@ -16,6 +17,7 @@
     <!-- Modules -->
     <script src="./src/menu/menuapp.module.js"></script>
     <script src="./src/data/data.module.js"></script>
+    <script src="./src/spinner/spinner.module.js"></script>
 
     <!--routes-->
     <script src="./src/routes.js"></script>
@@ -28,6 +30,9 @@
     <script src="./src/menu/categories/categories.component.js"></script>
     <script src="./src/menu/items/items.controller.js"></script>
     <script src="./src/menu/items/items.component.js"></script>
+
+    <!--spinner artifacts-->
+    <script src="./src/spinner/loadingspinner.component.js"></script>
 
   </body>
 </html>
