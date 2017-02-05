@@ -93,4 +93,7 @@
     }
   }
   
+  var service = new MenuSearchService();
+  console.log(service.getMatchedMenuItems('tofu'))
+
 })();
